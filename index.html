@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/54aebd12fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1 class="title">Calculadora</h1>
+        <p class="result" id="resultado"></p>
+        <table>
+            <tr>
+                <td><button class="b spacial" style="width: 106px;" onclick="clean()">AC</button></td>
+                <td><button class="b spacial" onclick="insert('%')"><i class="fas fa-percentage"></i></button></td>
+                <td><button class="b spacial" onclick="insert('/')"><i class="fas fa-divide"></i></button></td>
+            </tr>
+            <tr>
+                <td><button class="b" onclick="insert('7')">7</button></td>
+                <td><button class="b" onclick="insert('8')">8</button></td>
+                <td><button class="b" onclick="insert('9')">9</button></td>
+                <td><button class="b spacial" onclick="insert('*')"><i class="fas fa-times"></i></button></td>
+            </tr>
+            <tr>
+                <td><button class="b" onclick="insert('4')">4</button></td>
+                <td><button class="b" onclick="insert('5')">5</button></td>
+                <td><button class="b" onclick="insert('6')">6</button></td>
+                <td><button class="b spacial" onclick="insert('-')"><i class="fas fa-minus"></i></button></td>
+            </tr>
+            <tr>
+                <td><button class="b" onclick="insert('1')">1</button></td>
+                <td><button class="b" onclick="insert('2')">2</button></td>
+                <td><button class="b" onclick="insert('3')">3</button></td>
+                <td><button class="b spacial" onclick="insert('+')"><i class="fas fa-plus"></i></button></td>
+            </tr>
+            <tr>
+                <td><button class="b" onclick="insert('0')">0</button></td>
+                <td><button class="b" onclick="insert(',')">,</button></td>
+                <td><button class="b spacial" onclick="backspace()"><i class="fas fa-backspace"></i></button></td>
+                <td><button class="b spacial igual" onclick="confirm()"><i class="fas fa-equals"></i></button></td>
+            </tr>
+
+        </table>
+        
+    </div>
+
+    <script src="./calculadora.js"></script>
+
+    
+</body>
+</html>
